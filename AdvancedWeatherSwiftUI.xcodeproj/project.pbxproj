@@ -11,6 +11,10 @@
 		A051BF3A29D35FB800AE6187 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051BF3929D35FB800AE6187 /* ContentView.swift */; };
 		A051BF3C29D35FBA00AE6187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A051BF3B29D35FBA00AE6187 /* Assets.xcassets */; };
 		A051BF3F29D35FBA00AE6187 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A051BF3E29D35FBA00AE6187 /* Preview Assets.xcassets */; };
+		A051BF4D29D36C0E00AE6187 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051BF4C29D36C0E00AE6187 /* Extensions.swift */; };
+		A051BF4F29D36C9F00AE6187 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051BF4E29D36C9F00AE6187 /* HomeView.swift */; };
+		A051BF5129D3704700AE6187 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051BF5029D3704700AE6187 /* TabBar.swift */; };
+		A051BF5329D376E500AE6187 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051BF5229D376E500AE6187 /* Shapes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		A051BF3929D35FB800AE6187 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A051BF3B29D35FBA00AE6187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A051BF3E29D35FBA00AE6187 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A051BF4C29D36C0E00AE6187 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A051BF4E29D36C9F00AE6187 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A051BF5029D3704700AE6187 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		A051BF5229D376E500AE6187 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		A051BF3629D35FB800AE6187 /* AdvancedWeatherSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A051BF4729D36BB900AE6187 /* Utils */,
+				A051BF4629D36BB600AE6187 /* Models */,
+				A051BF4529D36BB000AE6187 /* Views */,
 				A051BF3729D35FB800AE6187 /* AdvancedWeatherSwiftUIApp.swift */,
-				A051BF3929D35FB800AE6187 /* ContentView.swift */,
 				A051BF3B29D35FBA00AE6187 /* Assets.xcassets */,
 				A051BF3D29D35FBA00AE6187 /* Preview Content */,
 			);
@@ -65,6 +75,64 @@
 				A051BF3E29D35FBA00AE6187 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A051BF4529D36BB000AE6187 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A051BF4B29D36BD600AE6187 /* Components */,
+				A051BF4A29D36BD200AE6187 /* Detail */,
+				A051BF4929D36BCC00AE6187 /* Navigation */,
+				A051BF4829D36BC500AE6187 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A051BF4629D36BB600AE6187 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A051BF4729D36BB900AE6187 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A051BF4C29D36C0E00AE6187 /* Extensions.swift */,
+				A051BF5229D376E500AE6187 /* Shapes.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A051BF4829D36BC500AE6187 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A051BF3929D35FB800AE6187 /* ContentView.swift */,
+				A051BF4E29D36C9F00AE6187 /* HomeView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A051BF4929D36BCC00AE6187 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A051BF5029D3704700AE6187 /* TabBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		A051BF4A29D36BD200AE6187 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		A051BF4B29D36BD600AE6187 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +206,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A051BF3A29D35FB800AE6187 /* ContentView.swift in Sources */,
+				A051BF4F29D36C9F00AE6187 /* HomeView.swift in Sources */,
+				A051BF4D29D36C0E00AE6187 /* Extensions.swift in Sources */,
 				A051BF3829D35FB800AE6187 /* AdvancedWeatherSwiftUIApp.swift in Sources */,
+				A051BF5129D3704700AE6187 /* TabBar.swift in Sources */,
+				A051BF5329D376E500AE6187 /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
