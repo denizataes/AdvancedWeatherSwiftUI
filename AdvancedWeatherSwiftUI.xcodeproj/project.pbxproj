@@ -15,6 +15,9 @@
 		A051BF4F29D36C9F00AE6187 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051BF4E29D36C9F00AE6187 /* HomeView.swift */; };
 		A051BF5129D3704700AE6187 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051BF5029D3704700AE6187 /* TabBar.swift */; };
 		A051BF5329D376E500AE6187 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051BF5229D376E500AE6187 /* Shapes.swift */; };
+		A051BF5629D4EEEF00AE6187 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = A051BF5529D4EEEF00AE6187 /* BottomSheet */; };
+		A051BF5829D4F01F00AE6187 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051BF5729D4F01F00AE6187 /* ForecastView.swift */; };
+		A051BF5A29D4F23900AE6187 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = A051BF5929D4F23900AE6187 /* Blur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,8 @@
 		A051BF4E29D36C9F00AE6187 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A051BF5029D3704700AE6187 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		A051BF5229D376E500AE6187 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		A051BF5729D4F01F00AE6187 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		A051BF5929D4F23900AE6187 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A051BF5629D4EEEF00AE6187 /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +130,7 @@
 		A051BF4A29D36BD200AE6187 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				A051BF5729D4F01F00AE6187 /* ForecastView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -131,6 +138,7 @@
 		A051BF4B29D36BD600AE6187 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A051BF5929D4F23900AE6187 /* Blur.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -151,6 +159,9 @@
 			dependencies = (
 			);
 			name = AdvancedWeatherSwiftUI;
+			packageProductDependencies = (
+				A051BF5529D4EEEF00AE6187 /* BottomSheet */,
+			);
 			productName = AdvancedWeatherSwiftUI;
 			productReference = A051BF3429D35FB800AE6187 /* AdvancedWeatherSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +190,9 @@
 				Base,
 			);
 			mainGroup = A051BF2B29D35FB800AE6187;
+			packageReferences = (
+				A051BF5429D4EEEF00AE6187 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
 			productRefGroup = A051BF3529D35FB800AE6187 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -207,8 +221,10 @@
 			files = (
 				A051BF3A29D35FB800AE6187 /* ContentView.swift in Sources */,
 				A051BF4F29D36C9F00AE6187 /* HomeView.swift in Sources */,
+				A051BF5A29D4F23900AE6187 /* Blur.swift in Sources */,
 				A051BF4D29D36C0E00AE6187 /* Extensions.swift in Sources */,
 				A051BF3829D35FB800AE6187 /* AdvancedWeatherSwiftUIApp.swift in Sources */,
+				A051BF5829D4F01F00AE6187 /* ForecastView.swift in Sources */,
 				A051BF5129D3704700AE6187 /* TabBar.swift in Sources */,
 				A051BF5329D376E500AE6187 /* Shapes.swift in Sources */,
 			);
@@ -411,6 +427,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A051BF5429D4EEEF00AE6187 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Wouter125/BottomSheet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A051BF5529D4EEEF00AE6187 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A051BF5429D4EEEF00AE6187 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A051BF2C29D35FB800AE6187 /* Project object */;
 }

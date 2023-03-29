@@ -26,7 +26,7 @@ struct TabBar: View {
                 // MARK: Expand Button
                 
                 Button {
-                    
+                    action()
                 } label: {
                     Image(systemName: "mappin.and.ellipse")
                         .frame(width: 44, height: 44)
