@@ -9,10 +9,38 @@ import SwiftUI
 
 struct ForecastView: View {
     var bottomSheetTranslationProrated: CGFloat = 1
+    @State private var selection = 0
     
     var body: some View {
         ScrollView{
-            
+            VStack(spacing: 0){
+                
+                //MARK: Segmented control
+                SegmentedControl(selection: $selection)
+                
+                // MARK: Forecast Cards
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 12){
+                        if selection == 0 {
+                            ForEach(Forecast.hourly) { forecast in
+                                ForecastCard(forecast: forecast, forecastPeriod: .hourly)
+                            }
+                            .transition(.offset(x: -430))
+                        } else {
+                            ForEach(Forecast.weekly) { forecast in
+                                ForecastCard(forecast: forecast, forecastPeriod: .weekly)
+                            }
+                            .transition(.offset(x: 430))
+                        }
+                    }
+                    .padding(.vertical,40)
+                }
+                .padding(.horizontal, 20)
+                
+                // MARK: Forecast widgets
+                
+                Image("Forecast Widgets")
+            }
         }
         .backgroundBlur(radius: 25, opaque: true)
         .background(Blur(radius: 25, opaque: true))
